@@ -39,6 +39,12 @@ public class TestCafe {
         appTest.displayMenu(menu, lineItems);
 
   
+        ArrayList<String> multiplecustomers = new ArrayList<String>();
+        
+        
+        appTest.addCustomer1(multiplecustomers);
+        System.out.println("\n");
+        
         
      
       

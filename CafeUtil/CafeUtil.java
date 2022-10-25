@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 public class CafeUtil {
     
     public void getStreakGoal(int numWeeks) {
@@ -43,18 +44,13 @@ public class CafeUtil {
         System.out.println("----- Add Customer Test-----");
         System.out.println("Please enter your name:");
         String userName = System.console().readLine();
-        
-        customers.add(userName); 
+        customers.add(userName);
         System.out.println("Hello," + userName);
         System.out.println("There are " + temprory + " people in front of you") ;
         System.out.print(customers);
         
         }
-        
-        
 
-
-    
     //Senpai Bonus: 
     public void viewDetails(String product, float price, int maxQuantity){
         
@@ -86,4 +82,25 @@ public class CafeUtil {
         }
         return true;
     }
+    public void addCustomer1(ArrayList<String> multiplecustomers){
+        
+        //Sensei Bonus! last:
+        System.out.println("barista Please enter the names you will add, press (q) if you finished entering names.");
+        Scanner s = new Scanner(System.in);
+        while(true){
+            String input = s.nextLine();
+            if(input.equals("q")){
+                break;
+            }
+            multiplecustomers.add(input);
+        }
+        
+        System.out.print(multiplecustomers);
+        
+
+        }
+        
+        
+
+
 }
